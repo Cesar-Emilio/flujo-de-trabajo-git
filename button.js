@@ -1,4 +1,4 @@
-const button = document.getElementById("cao");
+const button = document.getElementById("caos");
 
 if (button) {
     button.addEventListener("click", () => {
