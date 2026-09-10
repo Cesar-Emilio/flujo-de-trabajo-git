@@ -1,4 +1,4 @@
-let button = document.getElementById("caos")
+let button = document.getElementById("cao")
 button.addEventListener("click", () => {
     alert("caos")
 })
