@@ -23,6 +23,15 @@ function crearTarjetas(cantidad) {
     tarjeta.classList.add('tarjeta');
     tarjeta.style.backgroundColor = color;
     tarjeta.textContent = color;
+    tarjeta.title = 'Clic para copiar el color';
+
+    tarjeta.addEventListener('click', () => {
+      navigator.clipboard.writeText(color);
+      tarjeta.textContent = '¡Copiado!';
+      setTimeout(() => {
+        tarjeta.textContent = color;
+      }, 800);
+    });
 
     contenedor.appendChild(tarjeta);
   }
