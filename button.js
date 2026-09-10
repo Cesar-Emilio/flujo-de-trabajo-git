@@ -1,4 +1,7 @@
-let button = document.getElementById("cao")
-button.addEventListener("click", () => {
-    alert("caos")
-})
+const button = document.getElementById("cao");
+
+if (button) {
+    button.addEventListener("click", () => {
+        alert("caos");
+    });
+}
