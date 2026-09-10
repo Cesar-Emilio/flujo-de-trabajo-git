@@ -1,25 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
-</head>
-<body>
-<h1>Bienvenido a formulario Power Gym Centro</h1>
-<h3>llena este formulario para ver si eres el mejor de todo POWER GYM</h3>
-<form>
-<div>
-<label for="nombre">Cuanto cargas en press banca:</label>
-<input id="Peso">
-</div>
-<div>
-<label for="nombre">Cuantas comidas tienes al dia:</label>
-<input id="Comidas">
-</div>
-<button>Enviar</button>
 
-</form>
-    
+    <title>Formulario</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1 {
+            color: #222;
+        }
+
+        h3 {
+            color: #666;
+            font-weight: normal;
+        }
+
+        form {
+            background-color: white;
+            width: 350px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        div {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        input:focus {
+            border-color: #222;
+            outline: none;
+        }
+
+        button {
+            background-color: #222;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #444;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Bienvenido a formulario Power Gym Centro</h1>
+
+    <h3>Llena este formulario para ver si eres el mejor de todo POWER GYM</h3>
+
+    <form>
+
+        <div>
+            <label for="Peso">¿Cuánto cargas en press banca?</label>
+            <input id="Peso" type="number">
+        </div>
+
+        <div>
+            <label for="Comidas">¿Cuántas comidas tienes al día?</label>
+            <input id="Comidas" type="number">
+        </div>
+
+        <button type="submit" onclick="alert('¡Tu mensaje ha sido enviado con éxito!')">
+            Enviar
+        </button>
+
+    </form>
+
 </body>
+
 </html>
